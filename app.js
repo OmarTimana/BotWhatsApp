@@ -53,6 +53,67 @@ const flujoSugerencias = addKeyword('3', '3.', 'sugerencias')
         await fallBack('Ops, no entiendo tu respuesta, por favor intenta de nuevo')
     }
 })
+<<<<<<< HEAD
+=======
+
+const flujoConceptos=addKeyword('4','4.','concepto')
+.addAnswer('*4.Quiero solicitar un concepto técnico*')
+.addAnswer('Para solicitar un concepto técnico comuníquese por correo o teléfono con la oficina. \n*Correo: _usm@Udenar.edu.co_* \n*Teléfono: _7244309 Ext. 1118_*\nEspecifique la dependencia y el motivo de solicitud (Compras, Verificar estado)')
+.addAnswer(['Necesitas algo mas? (Si / No)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
+    let opcion = ctx.body.trim().toLowerCase()
+    if (['si', 's','no', 'n'].includes(opcion)) {
+        switch (opcion) {
+            case 'si'||'s':
+                await gotoFlow(flujoAuxiliar)
+                break;
+            case 'no'||'n':
+                await endFlow({body:'Fue un gusto atenderte, hasta pronto'})
+                break;
+        }
+    }else{
+        await fallBack('Ops, no entiendo tu respuesta, por favor intenta de nuevo')
+    }
+})
+
+const flujoMantenimiento=addKeyword('5','5.','mantenimiento')
+.addAnswer('*5.Quiero solicitar Mantenimiento*')
+.addAnswer('Recuerde que el equipo debe pertenecer a la *Universidad de Nariño* para realizarle manimiento Software o Hardware.\nPara ello debe dirigirse de forma presencial a la oficina de Soporte IIT ubicada en el 3 piso del Bloque Tecnológico')
+.addAnswer(['Necesitas algo mas? (Si / No)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
+    let opcion = ctx.body.trim().toLowerCase()
+    if (['si', 's','no', 'n'].includes(opcion)) {
+        switch (opcion) {
+            case 'si'||'s':
+                await gotoFlow(flujoAuxiliar)
+                break;
+            case 'no'||'n':
+                await endFlow({body:'Fue un gusto atenderte, hasta pronto'})
+                break;
+        }
+    }else{
+        await fallBack('Ops, no entiendo tu respuesta, por favor intenta de nuevo')
+    }
+})
+
+const flujoCamaras=addKeyword('6','6.','camaras')
+.addAnswer('*6.Quiero solicitar grabaciones CCTV*')
+.addAnswer('Dirija un correo electrónico a *usm@udenar.edu.co* especificando el motivo de su solicitud, seguido de sus datos personales como nombre, cédula, código, no olvide el aula y la fecha con hora exacta.')
+.addAnswer(['Necesitas algo mas? (Si / No)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
+    let opcion = ctx.body.trim().toLowerCase()
+    if (['si', 's','no', 'n'].includes(opcion)) {
+        switch (opcion) {
+            case 'si'||'s':
+                await gotoFlow(flujoAuxiliar)
+                break;
+            case 'no'||'n':
+                await endFlow({body:'Fue un gusto atenderte, hasta pronto'})
+                break;
+        }
+    }else{
+        await fallBack('Ops, no entiendo tu respuesta, por favor intenta de nuevo')
+    }
+})
+
+>>>>>>> master
 // --------------------------------------------------------------------------------------------
 const flujoStatgraphics=addKeyword('1')
 .addAnswer('QR para compartir el manual a tus compañeros',{media:'https://i.imgur.com/9Wp44fh.jpg'})
@@ -264,6 +325,10 @@ const flujoRoc = addKeyword('8')
     }
 })
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 const flujoManuales =addKeyword('__si__', '__s__', '2')
 .addAnswer( ['📚 Estos son los manuales disponibles \n','1.Manual Statgrahics ❇️\n','2.Manual Microsoft ❇️ \n','3.Manual Revit ❇️ \n','4.Manuales Cabri ❇️ \n','5. Manual Autocad ❇️ \n','6. Manual NavisWorks ❇️ \n', '7. Manual Geo5 ❇️ \n', '8. Manual RocScience ❇️ \n', '9. Regresar al Menu Principal'],{capture:true},async(ctx,{flowDynamic,fallBack, gotoFlow})=>{
 
@@ -320,7 +385,11 @@ const flujoManuales =addKeyword('__si__', '__s__', '2')
 
 const flujoAuxiliar = addKeyword('__menu__')
 .addAnswer('Selecciona una opción para poder ayudarte:')
+<<<<<<< HEAD
 .addAnswer(['1. Reservar Auditorio Tecnológico o Sala de Conferencias.', '2. Manuales de Instalación.', '3. Sugerencias', '4. Cancelar'],{capture:true}, async(ctx,{flowDynamic,gotoFlow,fallBack, endFlow})=>{
+=======
+.addAnswer(['1. Reservar Auditorio Tecnológico o Sala de Conferencias.', '2. Manuales de Instalación.',  '3. Sugerencias', '4. Solicitar Concepto Técnico','5.Solicitud Mantenimiento','6.Solicitar grabaciones CCTV','7.Cancelar'],{capture:true}, async(ctx,{flowDynamic,gotoFlow,fallBack, endFlow})=>{
+>>>>>>> master
 
     let opcion = ctx.body.trim()
     console.log('opcion Auxiliar', opcion)
@@ -337,6 +406,7 @@ const flujoAuxiliar = addKeyword('__menu__')
             console.log('opcion Manuales Auxiliar')
             await gotoFlow(flujoManuales)
         },
+<<<<<<< HEAD
         3: async(flujoSugerencias)=>{
             console.log('opcion Sugerencias Auxiliar')
             await flowDynamic(flujoSugerencias)
@@ -345,6 +415,31 @@ const flujoAuxiliar = addKeyword('__menu__')
             console.log('opcion Cancelar Auxiliar')
             await endFlow({body:'Fue un gusto atenderte, hasta pronto'}) 
         }
+,
+            3: async(flujoSugerencias)=>{
+                console.log('opcion Sugerencias')
+                await flowDynamic(flujoSugerencias)
+            },
+            4:async(flujoConceptos)=>{
+                console.log('opcion Conceptos')
+                await flowDynamic(flujoConceptos)
+            }
+            ,
+            5:async(flujoMantenimiento)=>{
+                console.log('opción Mantenimiento')
+                await flowDynamic(flujoMantenimiento)
+            }
+            ,
+            6:async(flujoCamaras)=>{
+                console.log('opcion Camaras')
+                await flowDynamic(flujoCamaras)
+            }
+            ,
+            7: async() => {
+                console.log('opción Cancelar Auxiliar')
+                await endFlow({body:'Fue un gusto atenderte, hasta pronto'}) 
+            }     
+>>>>>>> master
     }
     
     if (opcionesMenu[opcion]) {
@@ -354,13 +449,21 @@ const flujoAuxiliar = addKeyword('__menu__')
         await fallBack('Ops, no entiendo tu respuesta, por favor intenta de nuevo')
     }
 
+<<<<<<< HEAD
 },[flujoReserva, flujoSugerencias, flujoManuales])
+=======
+},[flujoReserva, flujoSugerencias, flujoManuales,flujoConceptos,flujoMantenimiento,flujoManuales,flujoCamaras])
+>>>>>>> master
 
 flujoInicial = addKeyword('hola', 'hols','buenos dias','hi','hello','buenos días','buenas tardes','buenas noches')
 .addAnswer('¡¡Hola!!',{media:'https://i.imgur.com/y3iK7Je.png'})
 .addAnswer('Gracias por comunicarte con el chat Bot 🤖 de la oficina de Infraestructura de Informática y Telecomunicaciones de la Universidad de Nariño')
 .addAnswer('Selecciona una opción para poder ayudarte:')
+<<<<<<< HEAD
 .addAnswer(['1. Reservar Auditorio Tecnológico o Sala de Conferencias.', '2. Manuales de Instalación.', '3. Sugerencias', '4. Cancelar'],{capture:true}, async(ctx,{flowDynamic, gotoFlow,fallBack, endFlow})=>{
+=======
+.addAnswer(['1. Reservar Auditorio Tecnológico o Sala de Conferencias.', '2. Manuales de Instalación.', '3. Sugerencias', '4. Solicitar Concepto Técnico','5.Solicitud Mantenimiento','6.Solicitar grabaciones CCTV','7.Cancelar'],{capture:true}, async(ctx,{flowDynamic, gotoFlow,fallBack, endFlow})=>{
+>>>>>>> master
 
     let opcion = ctx.body.trim()
     console.log('opcion Inicial', opcion)
@@ -373,6 +476,7 @@ flujoInicial = addKeyword('hola', 'hols','buenos dias','hi','hello','buenos día
             console.log('opcion Reserva Inicial')
             await flowDynamic(flujoReserva)
         },
+<<<<<<< HEAD
         2: async()=>{
             console.log('opcion Manuales Inicial')
             await gotoFlow(flujoManuales)
@@ -385,6 +489,32 @@ flujoInicial = addKeyword('hola', 'hols','buenos dias','hi','hello','buenos día
             console.log('opcion Cancelar Inicial')
             await endFlow({body:'Fue un gusto atenderte, hasta pronto'}) 
         }    
+=======
+        2: async () => {
+            console.log('opcion Manuales Auxiliar')
+            await gotoFlow(flujoManuales)
+        },
+        4:async(flujoConceptos)=>{
+            console.log('opcion Conceptos')
+            await flowDynamic(flujoConceptos)
+        }
+        ,
+        5:async(flujoMantenimiento)=>{
+            console.log('opcion Mantenimiento')
+            await flowDynamic(flujoMantenimiento)
+        }
+        ,
+        6:async(flujoCamaras)=>{
+            console.log('opcion Camaras')
+            await flowDynamic(flujoCamaras)
+        }
+        ,
+        7: async() => {
+            console.log('opcion Cancelar Auxiliar')
+            await endFlow({body:'Fue un gusto atenderte, hasta pronto'}) 
+        }   
+
+>>>>>>> master
     }
 
     if (opcionesMenu[opcion]) {
@@ -394,7 +524,11 @@ flujoInicial = addKeyword('hola', 'hols','buenos dias','hi','hello','buenos día
         await fallBack('Ops, no entiendo tu respuesta, por favor intenta de nuevo')
     }
 
+<<<<<<< HEAD
 },[flujoReserva, flujoSugerencias, flujoManuales])
+=======
+},[flujoReserva, flujoSugerencias, flujoManuales,flujoConceptos,flujoMantenimiento,flujoManuales,flujoCamaras])
+>>>>>>> master
 
 const main=async()=>{
     const adapterDB=new DBProvider()
