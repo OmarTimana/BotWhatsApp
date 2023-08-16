@@ -2,7 +2,7 @@ node_modules
 
 .env
 
-.google-key.json
+google-key.json
 
 /bot_sessions
 
