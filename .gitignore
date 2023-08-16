@@ -4,8 +4,10 @@ node_modules
 
 .google-key.json
 
-```
-
 /bot_sessions
 
 bot.qr.png
+
+database.json
+
+node-persist

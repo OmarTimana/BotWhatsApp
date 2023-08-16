@@ -2,10 +2,10 @@
   key: {
     remoteJid: '573152935907@s.whatsapp.net',
     fromMe: false,
-    id: '3415B434718E3D31A311F58830E95077',
+    id: 'E1791F3005D5F0E66C9C7662CFAB444D',
     participant: undefined
   },
-  messageTimestamp: 1690830484,
+  messageTimestamp: 1692205193,
   pushName: 'A',
   broadcast: false,
   message: Message {
@@ -22,135 +22,75 @@
   key: {
     remoteJid: '573152935907@s.whatsapp.net',
     fromMe: false,
-    id: 'EFD4A8D1AFB6D2382B24F623B717E57D',
+    id: 'C5A5D0F30EC58F34C0814A1FCDD3FA13',
     participant: undefined
   },
-  messageTimestamp: 1690830487,
+  messageTimestamp: 1692205198,
   pushName: 'A',
   broadcast: false,
   message: Message {
-    conversation: 'Ale',
+    conversation: '2',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Ale',
+  body: '2',
   from: '573152935907'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573152935907@s.whatsapp.net',
     fromMe: false,
-    id: 'D0C2D6091C2B0143F3E3C17DA0997912',
+    id: 'D3805381839C1BFCA5CF553BEB6909B7',
     participant: undefined
   },
-  messageTimestamp: 1690830495,
+  messageTimestamp: 1692205200,
   pushName: 'A',
   broadcast: false,
   message: Message {
-    conversation: '3',
+    conversation: '6',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: '3',
+  body: '6',
   from: '573152935907'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573152935907@s.whatsapp.net',
     fromMe: false,
-    id: '96518E03EE0CC3C9BD6ED168597681AF',
+    id: '2398BB8C924F6C11C45CB17DEADBA343',
     participant: undefined
   },
-  messageTimestamp: 1690830502,
+  messageTimestamp: 1692205216,
   pushName: 'A',
   broadcast: false,
   message: Message {
-    conversation: 'No',
+    conversation: 'Pos si jala',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'No',
+  body: 'Pos si jala',
   from: '573152935907'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573152935907@s.whatsapp.net',
     fromMe: false,
-    id: 'BB21A4385C9D03D9826E97B9B637EAD5',
+    id: '9A65AE16C238146DE7ABCD9AF006807F',
     participant: undefined
   },
-  messageTimestamp: 1690830506,
-  pushName: 'A',
-  broadcast: false,
-  message: Message {
-    conversation: 'Hola',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Hola',
-  from: '573152935907'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573152935907@s.whatsapp.net',
-    fromMe: false,
-    id: 'DBBB00659A7C66DC697BCCFEE9C7D5B3',
-    participant: undefined
-  },
-  messageTimestamp: 1690830509,
-  pushName: 'A',
-  broadcast: false,
-  message: Message {
-    conversation: 'Ale',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: 'Ale',
-  from: '573152935907'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573152935907@s.whatsapp.net',
-    fromMe: false,
-    id: '7348DA57DEC8BA3C41A3DD27BF7D70C0',
-    participant: undefined
-  },
-  messageTimestamp: 1690830514,
-  pushName: 'A',
-  broadcast: false,
-  message: Message {
-    conversation: '7',
-    messageContextInfo: MessageContextInfo {
-      deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
-    }
-  },
-  body: '7',
-  from: '573152935907'
-}
-[handleMsg]:  {
-  key: {
-    remoteJid: '573152935907@s.whatsapp.net',
-    fromMe: false,
-    id: 'F85A1271D363629CF524B168FFAA49D5',
-    participant: undefined
-  },
-  messageTimestamp: 1690830530,
+  messageTimestamp: 1692205224,
   pushName: 'A',
   broadcast: false,
   message: Message {
     extendedTextMessage: ExtendedTextMessage {
-      text: 'Porque imprime no más esto?? No tiene sentido',
+      text: 'Si',
       previewType: 0,
       contextInfo: [ContextInfo],
       inviteLinkGroupTypeV2: 0
@@ -160,6 +100,26 @@
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Porque imprime no más esto?? No tiene sentido',
+  body: 'Si',
+  from: '573152935907'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573152935907@s.whatsapp.net',
+    fromMe: false,
+    id: 'D6C060BAD6537104B2F959BD33B7E446',
+    participant: undefined
+  },
+  messageTimestamp: 1692205259,
+  pushName: 'A',
+  broadcast: false,
+  message: Message {
+    conversation: 'A la madre',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'A la madre',
   from: '573152935907'
 }
