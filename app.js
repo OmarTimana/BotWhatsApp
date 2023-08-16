@@ -406,7 +406,7 @@ const flujoAuxiliar = addKeyword('__menu__')
             }
             ,
             5:async(flujoMantenimiento)=>{
-                console.log('opcion Mantenimiento')
+                console.log('opción Mantenimiento')
                 await flowDynamic(flujoMantenimiento)
             }
             ,
@@ -416,7 +416,7 @@ const flujoAuxiliar = addKeyword('__menu__')
             }
             ,
             7: async() => {
-                console.log('opcion Cancelar Auxiliar')
+                console.log('opción Cancelar Auxiliar')
                 await endFlow({body:'Fue un gusto atenderte, hasta pronto'}) 
             }     
     }
