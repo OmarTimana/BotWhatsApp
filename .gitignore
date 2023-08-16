@@ -8,6 +8,10 @@ node_modules
 
 bot.qr.png
 
+core.class.log
+
+baileys.log
+
 database.json
 
 <<<<<<< HEAD
