@@ -1,0 +1,13 @@
+node_modules
+
+.env
+
+.google-key.json
+
+/bot_sessions
+
+bot.qr.png
+
+database.json
+
+node-persist
