@@ -1,0 +1,417 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233534505@s.whatsapp.net',
+    fromMe: false,
+    id: 'F2D6B753298F67C5EBEE125125BBFC80',
+    participant: undefined
+  },
+  messageTimestamp: 1692217967,
+  pushName: '~DonDiablo',
+  broadcast: false,
+  message: Message {
+    conversation: 'Hola',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Hola',
+  from: '573233534505'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233534505@s.whatsapp.net',
+    fromMe: false,
+    id: '373D4C7D2C24A72FA5D81E584FCB5154',
+    participant: undefined
+  },
+  messageTimestamp: 1692217973,
+  pushName: '~DonDiablo',
+  broadcast: false,
+  message: Message {
+    conversation: '4',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '4',
+  from: '573233534505'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233534505@s.whatsapp.net',
+    fromMe: false,
+    id: '6A58F47AA04445E88CAECC4E9C30CABD',
+    participant: undefined
+  },
+  messageTimestamp: 1692217976,
+  pushName: '~DonDiablo',
+  broadcast: false,
+  message: Message {
+    conversation: 'Si',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Si',
+  from: '573233534505'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233534505@s.whatsapp.net',
+    fromMe: false,
+    id: 'FD453F49158DF2B41371145A93CB4C3B',
+    participant: undefined
+  },
+  messageTimestamp: 1692217979,
+  pushName: '~DonDiablo',
+  broadcast: false,
+  message: Message {
+    conversation: '2',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '2',
+  from: '573233534505'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233534505@s.whatsapp.net',
+    fromMe: false,
+    id: 'A75C209043F470CD18B177E5B891905C',
+    participant: undefined
+  },
+  messageTimestamp: 1692217986,
+  pushName: '~DonDiablo',
+  broadcast: false,
+  message: Message {
+    conversation: '8',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '8',
+  from: '573233534505'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233534505@s.whatsapp.net',
+    fromMe: false,
+    id: 'B893ACDBDD12E8F0BB2A84B11CC8DDB6',
+    participant: undefined
+  },
+  messageTimestamp: 1692217995,
+  pushName: '~DonDiablo',
+  broadcast: false,
+  message: Message {
+    conversation: 'Menu',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Menu',
+  from: '573233534505'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233534505@s.whatsapp.net',
+    fromMe: false,
+    id: '08781F259346B1BBC838C5486B8CF6C6',
+    participant: undefined
+  },
+  messageTimestamp: 1692217998,
+  pushName: '~DonDiablo',
+  broadcast: false,
+  message: Message {
+    conversation: '6',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '6',
+  from: '573233534505'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233534505@s.whatsapp.net',
+    fromMe: false,
+    id: '69CDAD61BAD564D9681DCEE9A5B4F388',
+    participant: undefined
+  },
+  messageTimestamp: 1692218017,
+  pushName: '~DonDiablo',
+  broadcast: false,
+  message: Message {
+    conversation: 'Si',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Si',
+  from: '573233534505'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573233534505@s.whatsapp.net',
+    fromMe: false,
+    id: 'FECB5DB5FF4A145AA252435BC65C0EB2',
+    participant: undefined
+  },
+  messageTimestamp: 1692218020,
+  pushName: '~DonDiablo',
+  broadcast: false,
+  message: Message {
+    conversation: '7',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '7',
+  from: '573233534505'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573002367435@s.whatsapp.net',
+    fromMe: false,
+    id: '2FCEEB6143D7404937E0',
+    participant: undefined
+  },
+  messageTimestamp: 1692219315,
+  pushName: 'Veronica Santacruz',
+  broadcast: false,
+  messageStubType: 2,
+  messageStubParameters: [ 'Message absent from node' ],
+  body: undefined,
+  from: '573002367435'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573002367435@s.whatsapp.net',
+    fromMe: false,
+    id: '2FCEEB6143D7404937E0',
+    participant: undefined
+  },
+  messageTimestamp: 1692219421,
+  pushName: 'Veronica Santacruz',
+  broadcast: false,
+  message: Message {
+    conversation: 'Gracias por comunicarte con Veronica Santacruz. Por favor, haznos saber cómo podemos ayudarte.',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: '',
+  body: 'Gracias por comunicarte con Veronica Santacruz. Por favor, haznos saber cómo podemos ayudarte.',
+  from: '573002367435'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573002367435@s.whatsapp.net',
+    fromMe: false,
+    id: '2FCEEB6143D7404937E0',
+    participant: undefined
+  },
+  messageTimestamp: 1692219516,
+  pushName: 'Veronica Santacruz',
+  broadcast: false,
+  message: Message {
+    conversation: 'Gracias por comunicarte con Veronica Santacruz. Por favor, haznos saber cómo podemos ayudarte.',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  verifiedBizName: '',
+  body: 'Gracias por comunicarte con Veronica Santacruz. Por favor, haznos saber cómo podemos ayudarte.',
+  from: '573002367435'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573142162301@s.whatsapp.net',
+    fromMe: false,
+    id: '3259783B2A8DF1EEA0EA83AF02E99F11',
+    participant: undefined
+  },
+  messageTimestamp: 1692221378,
+  pushName: '😃',
+  broadcast: false,
+  message: Message {
+    conversation: 'Ya casi me Alejita, bueno me. Alegra que estés trabajando ya casi sales a descansar',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'Ya casi me Alejita, bueno me. Alegra que estés trabajando ya casi sales a descansar',
+  from: '573142162301'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573142162301@s.whatsapp.net',
+    fromMe: false,
+    id: '1C759E06AE0405B52B06182B0A7F3B06',
+    participant: undefined
+  },
+  messageTimestamp: 1692221468,
+  pushName: '😃',
+  broadcast: false,
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/18956090_261303480028873_3372230177679806576_n.enc?ccb=11-4&oh=01_AdRijrSeC1-I3dt3urToqlCHOYH6gqNXhBT2BRIaZ998sw&oe=6504CC7C&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 5,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/18956090_261303480028873_3372230177679806576_n.enc?ccb=11-4&oh=01_AdRijrSeC1-I3dt3urToqlCHOYH6gqNXhBT2BRIaZ998sw&oe=6504CC7C',
+      mediaKeyTimestamp: [Long],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '_event_voice_note__1877e5e7-0eb8-49d1-abdf-161559a5efa8',
+  from: '573142162301'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573142162301@s.whatsapp.net',
+    fromMe: false,
+    id: '164913F3517324D2C855ACC7E878416E',
+    participant: undefined
+  },
+  messageTimestamp: 1692221908,
+  pushName: '😃',
+  broadcast: false,
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/41004298_1346780732902287_8759213941735877997_n.enc?ccb=11-4&oh=01_AdQFCRdCcx9XgfOOBwP-jVhHjjgStQg2ueCvnV10AiRy_A&oe=6504C399&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 4,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/41004298_1346780732902287_8759213941735877997_n.enc?ccb=11-4&oh=01_AdQFCRdCcx9XgfOOBwP-jVhHjjgStQg2ueCvnV10AiRy_A&oe=6504C399',
+      mediaKeyTimestamp: [Long],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '_event_voice_note__ac3cc378-ed24-42f8-b80a-57f4e517c2f4',
+  from: '573142162301'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573142162301@s.whatsapp.net',
+    fromMe: false,
+    id: '68FC52E2A3A470642CF02454AF6A701F',
+    participant: undefined
+  },
+  messageTimestamp: 1692222117,
+  pushName: '😃',
+  broadcast: false,
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/40677273_1741062353031342_5617368409506153455_n.enc?ccb=11-4&oh=01_AdS8ZmNs1sG0HKK3YqfKINfYZe4VCsB7XVrMMrgb9oezQQ&oe=6504A20F&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 8,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/40677273_1741062353031342_5617368409506153455_n.enc?ccb=11-4&oh=01_AdS8ZmNs1sG0HKK3YqfKINfYZe4VCsB7XVrMMrgb9oezQQ&oe=6504A20F',
+      mediaKeyTimestamp: [Long],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '_event_voice_note__125acc16-f962-4ed8-aa13-c535ab9aeacc',
+  from: '573142162301'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573142162301@s.whatsapp.net',
+    fromMe: false,
+    id: 'B2BF83FA812185371C49C0C68E189759',
+    participant: undefined
+  },
+  messageTimestamp: 1692222242,
+  pushName: '😃',
+  broadcast: false,
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/33342288_1070195991029796_7072138117119068014_n.enc?ccb=11-4&oh=01_AdRrqa5tS2JnkRuf4kXNhxK3Lri-18RCv352n8J1unb-4w&oe=6504BE09&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 6,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/33342288_1070195991029796_7072138117119068014_n.enc?ccb=11-4&oh=01_AdRrqa5tS2JnkRuf4kXNhxK3Lri-18RCv352n8J1unb-4w&oe=6504BE09',
+      mediaKeyTimestamp: [Long],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '_event_voice_note__3413a5e1-50fb-4cd3-84c1-221572490f4c',
+  from: '573142162301'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573142162301@s.whatsapp.net',
+    fromMe: false,
+    id: '3D02165315B016AEFF294D31BAF4E853',
+    participant: undefined
+  },
+  messageTimestamp: 1692222244,
+  pushName: '😃',
+  broadcast: false,
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/33007656_2591883917654668_3484032620657849590_n.enc?ccb=11-4&oh=01_AdRGdx7_PQOl3pX4vJODNRSfZV8nhN4eOV48b2PMnxsITg&oe=6504B0D4&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 1,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/33007656_2591883917654668_3484032620657849590_n.enc?ccb=11-4&oh=01_AdRGdx7_PQOl3pX4vJODNRSfZV8nhN4eOV48b2PMnxsITg&oe=6504B0D4',
+      mediaKeyTimestamp: [Long],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '_event_voice_note__e1291d77-f17a-48ec-bf2b-614974185a16',
+  from: '573142162301'
+}
