@@ -9,7 +9,6 @@
     },
     "keywords": [],
     "dependencies": {
-<<<<<<< HEAD
         "@adiwajshing/baileys": "github:WhiskeySockets/Baileys",
         "@adiwajshing/keyed-db": "^0.2.4",
         "@bot-whatsapp/bot": "latest",
@@ -19,14 +18,6 @@
         "@bot-whatsapp/portal": "latest",
         "@bot-whatsapp/provider": "latest",
         "@google-cloud/dialogflow": "^5.9.0",
-=======
-        "@bot-whatsapp/bot": "latest",
-        "@bot-whatsapp/cli": "latest",
-        "@bot-whatsapp/database": "latest",
-        "@bot-whatsapp/provider": "latest",
-        "@bot-whatsapp/portal": "latest",
-        "@whiskeysockets/baileys": "^6.4.0",
->>>>>>> master
         "wa-sticker-formatter": "4.3.2"
     },
     "author": "",
