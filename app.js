@@ -378,7 +378,7 @@ const flujoManuales =addKeyword('__si__', '__s__', '2')
 
 const flujoAuxiliar = addKeyword('__menu__')
 .addAnswer('Selecciona una opción para poder ayudarte:')
-.addAnswer(['1. Reservar Auditorio Tecnológico o Sala de Conferencias.', '2. Manuales de Instalación.', '3. Sugerencias', '4. Cancelar'],{capture:true}, async(ctx,{flowDynamic,gotoFlow,fallBack, endFlow})=>{
+.addAnswer(['1. Reservar Auditorio Tecnológico o Sala de Conferencias.', '2. Manuales de Instalación.', '3. Sugerencias',  '4. Solicitar Concepto Técnico','5.Solicitud Mantenimiento','6.Solicitar grabaciones CCTV','7.Cancelar'],{capture:true}, async(ctx,{flowDynamic,gotoFlow,fallBack, endFlow})=>{
 
     let opcion = ctx.body.trim()
     console.log('opcion Auxiliar', opcion)
@@ -436,7 +436,7 @@ flujoInicial = addKeyword('hola', 'hols','buenos dias','hi','hello','buenos día
 .addAnswer('¡¡Hola!!',{media:'https://i.imgur.com/y3iK7Je.png'})
 .addAnswer('Gracias por comunicarte con el chat Bot 🤖 de la oficina de Infraestructura de Informática y Telecomunicaciones de la Universidad de Nariño')
 .addAnswer('Selecciona una opción para poder ayudarte:')
-.addAnswer(['1. Reservar Auditorio Tecnológico o Sala de Conferencias.', '2. Manuales de Instalación.', '3. Sugerencias', '4. Cancelar'],{capture:true}, async(ctx,{flowDynamic, gotoFlow,fallBack, endFlow})=>{
+.addAnswer(['1. Reservar Auditorio Tecnológico o Sala de Conferencias.', '2. Manuales de Instalación.', '3. Sugerencias',  '4. Solicitar Concepto Técnico','5.Solicitud Mantenimiento','6.Solicitar grabaciones CCTV','7.Cancelar'],{capture:true}, async(ctx,{flowDynamic, gotoFlow,fallBack, endFlow})=>{
 
     let opcion = ctx.body.trim()
     console.log('opcion Inicial', opcion)
