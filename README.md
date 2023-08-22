@@ -5,11 +5,11 @@
 </p>
 
 
-** proveedor de WhatsApp,** configurar respuestas automatizadas para preguntas frecuentes, **
+** proveedor de WhatsApp,** configurar respuestas automatizadas para preguntas frecuentes,
 
 
 ```
-Pasos para Instalación o Despliegue
+** Pasos para Instalación o Despliegue **
 git clone https://github.com/OmarTimana/BotWhatsApp.git
 npm i
 npm start
