@@ -18,3 +18,5 @@ El celular que se va a vincular con el bot, debe escanear el **QR** que se encue
 ## Recursos
 - **[Documentación]**
 
+- https://liveudenaredu-my.sharepoint.com/:t:/g/personal/usm_udenar_edu_co/ER2PYJtXCvBNm6ndBT9_nrgBODcEKXGt0hoiyGUqr6GeVA?e=E8gEYm
+
