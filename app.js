@@ -194,7 +194,7 @@ const flujoRevit = addKeyword('3')
 
 const flujoCabri = addKeyword('4')
 .addAnswer('QR para compartir el manual a tus compañeros', {media:'https://i.imgur.com/tQ376kA.jpg'})
-.addAnswer('Link del manual', 'https://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/EgfvVBKGouxClUnqcWJwlTUBTUfvLAeEuUpWmNmatCwD9w?e=VS1lHu')
+.addAnswer('Link del manual\nhttps://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/EgfvVBKGouxClUnqcWJwlTUBTUfvLAeEuUpWmNmatCwD9w?e=8Z41wb')
 .addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
     let opcion = ctx.body.trim().toLowerCase()
     console.log('opcion Cabri', opcion)
@@ -220,7 +220,7 @@ const flujoCabri = addKeyword('4')
 
 const flujoAutocad = addKeyword('5')
 .addAnswer('QR para compartir el manual a tus compañeros', {media:'https://i.imgur.com/BmtkdhK.jpg'})
-.addAnswer('Link del manual', 'https://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/EuJjfmI1ojREuM5ux-YoYCgBggurQtbKf8aqh72JwH-bjw?e=QDv19A')
+.addAnswer('Link del manual\nhttps://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/EuJjfmI1ojREuM5ux-YoYCgBggurQtbKf8aqh72JwH-bjw?e=CdrHNr')
 .addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
     let opcion = ctx.body.trim().toLowerCase()
     console.log('opcion Autocad', opcion)
@@ -246,7 +246,7 @@ const flujoAutocad = addKeyword('5')
 
 const flujoNavisworks = addKeyword('6')
 .addAnswer('QR para compartir el manual a tus compañeros', {media:'https://i.imgur.com/83aS5R5.png'})
-.addAnswer(['Link del Manual', 'https://liveudenaredu-my.sharepoint.com/personal/usm_udenar_edu_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fusm%5Fudenar%5Fedu%5Fco%2FDocuments%2FGUIAS%20DE%20INSTALACI%C3%93N%2FGUIA%20NAVISWORKS&view=0'])
+.addAnswer(['Link del Manual\nhttps://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/EuGsZMaRajVEtfKQ8FdRajsBTFU6nB9toNSBUJMp7ry2eg?e=nfXVWz'])
 .addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
     let opcion = ctx.body.trim().toLowerCase()
     console.log('opcion Navisworks', opcion)
@@ -272,7 +272,7 @@ const flujoNavisworks = addKeyword('6')
 
 const flujoGeo5 = addKeyword('7')
 .addAnswer('QR para compartir el manual a tus compañeros', {media:'https://i.imgur.com/Nv3a1Gi.png'})
-.addAnswer(['Link del Manual', 'https://liveudenaredu-my.sharepoint.com/personal/usm_udenar_edu_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fusm%5Fudenar%5Fedu%5Fco%2FDocuments%2FGUIAS%20DE%20INSTALACI%C3%93N%2FGUIA%20GEO5&ga=1'])
+.addAnswer(['Link del Manual\nhttps://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/EiFsA5nPih5Dh4h1-HmYHiABTOye_RAdcd09T1O7D72_9w?e=CXB77v'])
 .addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
     let opcion = ctx.body.trim().toLowerCase()
     console.log('opcion Navisworks', opcion)
@@ -298,7 +298,7 @@ const flujoGeo5 = addKeyword('7')
 
 const flujoRoc = addKeyword('8')
 .addAnswer('QR para compartir el manual a tus compañeros', {media:'https://i.imgur.com/tAviKM2.png'})
-.addAnswer(['Link del Manual', 'https://liveudenaredu-my.sharepoint.com/personal/usm_udenar_edu_co/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fusm%5Fudenar%5Fedu%5Fco%2FDocuments%2FGUIAS%20DE%20INSTALACI%C3%93N%2FGUIA%20ROCSCIENCE&view=0'])
+.addAnswer(['Link del Manual\nhttps://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/Ev_e-mSLOo1Lh-YNl0c62F8BHTkyvkRgD97NsJ2p84XKzg?e=iqDqSh'])
 .addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
     let opcion = ctx.body.trim().toLowerCase()
     console.log('opcion Navisworks', opcion)
