@@ -1,11 +1,6 @@
-const {
-    createBot,
-    createProvider,
-    createFlow,
-    addKeyword } = require('@bot-whatsapp/bot')
+const {createBot ,createProvider ,createFlow ,addKeyword } = require('@bot-whatsapp/bot')
 
 const QRPortal= require('@bot-whatsapp/portal')
-
 const WsProvider = require('@bot-whatsapp/provider/baileys')
 const DBProvider = require('@bot-whatsapp/database/mock')
 
@@ -19,11 +14,9 @@ const flujoReserva = addKeyword('1', '1.', 'reserva')
     if (['si', 's','no', 'n'].includes(opcion)) {
         switch (opcion) {
             case 'si'||'s':
-                console.log('opcion Si reserva', opcion)
                 await gotoFlow(flujoAuxiliar)
                 break;
             case 'no'||'n':
-                console.log('opcion No reserva', opcion)
                 await endFlow({body:'Fue un gusto atenderte, hasta pronto'})
                 break;
         }
@@ -37,15 +30,12 @@ const flujoSugerencias = addKeyword('3', '3.', 'sugerencias')
 .addAnswer('Estamos cambiando para mejorar, por favor déjanos saber tu sugerencia:\nhttps://forms.office.com/Pages/ResponsePage.aspx?id=6wzDLf2QwEK2PFrN0SiQsQI5A-F1Ff5AqD1K2NOiTGpUNU5EUEZYRzU1WFNLU1k3UjFOM1VaRkMzSC4u')
 .addAnswer(['Necesitas algo mas? (Si / No)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
     let opcion = ctx.body.trim().toLowerCase()
-    console.log('opcion Sugerencias', opcion)
     if (['si', 's','no', 'n'].includes(opcion)) {
         switch (opcion) {
             case 'si'||'s':
-                console.log('opcion Si sugerencias', opcion)
                 await gotoFlow(flujoAuxiliar)
                 break;
             case 'no'||'n':
-                console.log('opcion No sugerencias', opcion)
                 await endFlow({body:'Fue un gusto atenderte, hasta pronto'})
                 break;
         }
@@ -117,19 +107,15 @@ const flujoStatgraphics=addKeyword('1')
 .addAnswer(['Link del Manual', 'https://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/ElGNjC4hIIlPnryZJNDoCYgBtVeyN-LeW6j0j_S5Hge4VA?e=As4uwz'])
 .addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
     let opcion = ctx.body.trim().toLowerCase()
-    console.log('opcion Statgraphics', opcion)
     if (['si', 's','no', 'n', 'menu', 'menú'].includes(opcion)) {
         switch (opcion) {
             case 'si'||'s':
-                console.log('opcion Si Statgraphics', opcion)
                 await gotoFlow(flujoManuales)
                 break;
             case 'menu'||'menú':
-                console.log('opcion Menu Statgraphics', opcion)
                 await gotoFlow(flujoAuxiliar)
                 break;
             case 'no'||'n':
-                console.log('opcion No Statgraphics', opcion)
                 await endFlow({body:'Fue un gusto atenderte, hasta pronto'})
                 break;
         }
@@ -144,19 +130,15 @@ const flujoMicrosoft=addKeyword('2')
 .addAnswer(['Link del Manual', 'https://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/Et-jxM-cgAZBg7-fJ3lhBh8Ba6FOpPCe1s1aO5MX-J4mig?e=0dbOce'])
 .addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
     let opcion = ctx.body.trim().toLowerCase()
-    console.log('opcion Microsoft', opcion)
     if (['si', 's','no', 'n', 'menu', 'menú'].includes(opcion)) {
         switch (opcion) {
             case 'si'||'s':
-                console.log('opcion Si Microsoft', opcion)
                 await gotoFlow(flujoManuales)
                 break;
             case 'menu'||'menú':
-                console.log('opcion Menu Microsoft', opcion)
                 await gotoFlow(flujoAuxiliar)
                 break;
             case 'no'||'n':
-                console.log('opcion No Microsoft', opcion)
                 await endFlow({body:'Fue un gusto atenderte, hasta pronto'})
                 break;
         }
@@ -170,19 +152,15 @@ const flujoRevit = addKeyword('3')
 .addAnswer(['Link del Manual', 'https://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/EhE8dQk_PHxDj2QFglSst7UBW1o-CHaS5XDpzT5N9hKl_Q?e=khQulb'])
 .addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
     let opcion = ctx.body.trim().toLowerCase()
-    console.log('opcion Revit', opcion)
     if (['si', 's','no', 'n', 'menu', 'menú'].includes(opcion)) {
         switch (opcion) {
             case 'si'||'s':
-                console.log('opcion Si Revit', opcion)
                 await gotoFlow(flujoManuales)
                 break;
             case 'menu'||'menú':
-                console.log('opcion Menu Revit', opcion)
                 await gotoFlow(flujoAuxiliar)
                 break;
             case 'no'||'n':
-                console.log('opcion No Revit', opcion)
                 await endFlow({body:'Fue un gusto atenderte, hasta pronto'})
                 break;
         }
@@ -197,19 +175,15 @@ const flujoCabri = addKeyword('4')
 .addAnswer('Link del manual\nhttps://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/EgfvVBKGouxClUnqcWJwlTUBTUfvLAeEuUpWmNmatCwD9w?e=8Z41wb')
 .addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
     let opcion = ctx.body.trim().toLowerCase()
-    console.log('opcion Cabri', opcion)
     if (['si', 's','no', 'n', 'menu', 'menú'].includes(opcion)) {
         switch (opcion) {
             case 'si'||'s':
-                console.log('opcion Si Cabri', opcion)
                 await gotoFlow(flujoManuales)
                 break;
             case 'menu'||'menú':
-                console.log('opcion Menu Cabri', opcion)
                 await gotoFlow(flujoAuxiliar)
                 break;
             case 'no'||'n':
-                console.log('opcion No Cabri', opcion)
                 await endFlow({body:'Fue un gusto atenderte, hasta pronto'})
                 break;
         }
@@ -223,19 +197,15 @@ const flujoAutocad = addKeyword('5')
 .addAnswer('Link del manual\nhttps://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/EuJjfmI1ojREuM5ux-YoYCgBggurQtbKf8aqh72JwH-bjw?e=CdrHNr')
 .addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
     let opcion = ctx.body.trim().toLowerCase()
-    console.log('opcion Autocad', opcion)
     if (['si', 's','no', 'n', 'menu', 'menú'].includes(opcion)) {
         switch (opcion) {
             case 'si'||'s':
-                console.log('opcion Si Autocad', opcion)
                 await gotoFlow(flujoManuales)
                 break;
             case 'menu'||'menú':
-                console.log('opcion Menu Autocad', opcion)
                 await gotoFlow(flujoAuxiliar)
                 break;
             case 'no'||'n':
-                console.log('opcion No Autocad', opcion)
                 await endFlow({body:'Fue un gusto atenderte, hasta pronto'})
                 break;
         }
@@ -249,19 +219,15 @@ const flujoNavisworks = addKeyword('6')
 .addAnswer(['Link del Manual\nhttps://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/EuGsZMaRajVEtfKQ8FdRajsBTFU6nB9toNSBUJMp7ry2eg?e=nfXVWz'])
 .addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
     let opcion = ctx.body.trim().toLowerCase()
-    console.log('opcion Navisworks', opcion)
     if (['si', 's','no', 'n', 'menu', 'menú'].includes(opcion)) {
         switch (opcion) {
             case 'si'||'s':
-                console.log('opcion Si Navisworks', opcion)
                 await gotoFlow(flujoManuales)
                 break;
             case 'menu'||'menú':
-                console.log('opcion Menu Navisworks', opcion)
                 await gotoFlow(flujoAuxiliar)
                 break;
             case 'no'||'n':
-                console.log('opcion No Navisworks', opcion)
                 await endFlow({body:'Fue un gusto atenderte, hasta pronto'})
                 break;
         }
@@ -271,24 +237,20 @@ const flujoNavisworks = addKeyword('6')
 })
 
 const flujoGeo5 = addKeyword('7')
-.addAnswer('QR para compartir el manual a tus compañeros', {media:'https://i.imgur.com/Nv3a1Gi.png'})
+.addAnswer('QR para compartir el manual a tus compañeros', { media:'https://i.imgur.com/Nv3a1Gi.png' })
 .addAnswer(['Link del Manual\nhttps://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/EiFsA5nPih5Dh4h1-HmYHiABTOye_RAdcd09T1O7D72_9w?e=CXB77v'])
-.addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
+.addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'] ,{ capture:true }, async ( ctx,{ fallBack, gotoFlow, endFlow } )=>{
     let opcion = ctx.body.trim().toLowerCase()
-    console.log('opcion Navisworks', opcion)
-    if (['si', 's','no', 'n', 'menu', 'menú'].includes(opcion)) {
+    if ( ['si', 's','no', 'n', 'menu', 'menú'].includes( opcion ) ) {
         switch (opcion) {
             case 'si'||'s':
-                console.log('opcion Si Navisworks', opcion)
-                await gotoFlow(flujoManuales)
+                await gotoFlow( flujoManuales )
                 break;
             case 'menu'||'menú':
-                console.log('opcion Menu Navisworks', opcion)
-                await gotoFlow(flujoAuxiliar)
+                await gotoFlow( flujoAuxiliar )
                 break;
             case 'no'||'n':
-                console.log('opcion No Navisworks', opcion)
-                await endFlow({body:'Fue un gusto atenderte, hasta pronto'})
+                await endFlow( {body:'Fue un gusto atenderte, hasta pronto'} )
                 break;
         }
     }else{
@@ -301,19 +263,15 @@ const flujoRoc = addKeyword('8')
 .addAnswer(['Link del Manual\nhttps://liveudenaredu-my.sharepoint.com/:f:/g/personal/usm_udenar_edu_co/Ev_e-mSLOo1Lh-YNl0c62F8BHTkyvkRgD97NsJ2p84XKzg?e=iqDqSh'])
 .addAnswer(['Necesitas otro manual? (Si / No) o Necesitas algo mas? (Menu)'],{capture:true},async (ctx,{fallBack, gotoFlow, endFlow})=>{
     let opcion = ctx.body.trim().toLowerCase()
-    console.log('opcion Navisworks', opcion)
     if (['si', 's','no', 'n', 'menu', 'menú'].includes(opcion)) {
         switch (opcion) {
             case 'si'||'s':
-                console.log('opcion Si Navisworks', opcion)
                 await gotoFlow(flujoManuales)
                 break;
             case 'menu'||'menú':
-                console.log('opcion Menu Navisworks', opcion)
                 await gotoFlow(flujoAuxiliar)
                 break;
             case 'no'||'n':
-                console.log('opcion No Navisworks', opcion)
                 await endFlow({body:'Fue un gusto atenderte, hasta pronto'})
                 break;
         }
@@ -326,31 +284,24 @@ const flujoManuales =addKeyword('__si__', '__s__', '2')
 .addAnswer( ['📚 Estos son los manuales disponibles \n','1.Manual Statgrahics ❇️\n','2.Manual Microsoft ❇️ \n','3.Manual Revit ❇️ \n','4.Manuales Cabri ❇️ \n','5. Manual Autocad ❇️ \n','6. Manual NavisWorks ❇️ \n', '7. Manual Geo5 ❇️ \n', '8. Manual RocScience ❇️ \n', '9. Regresar al Menu Principal'],{capture:true},async(ctx,{flowDynamic,fallBack, gotoFlow})=>{
 
     let opcion = ctx.body.trim()
-    console.log('opcion Manuales', opcion)
 
     const opcionesMenu = {
         1: async(flujoStatgraphics)=>{
-            console.log('opcion Statgraphics 1')
             await flowDynamic(flujoStatgraphics)
         },
         2: async(flujoMicrosoft)=>{
-            console.log('opcion Microsoft 2')
             await flowDynamic(flujoMicrosoft)
         },
         3: async(flujoRevit)=>{
-            console.log('opcion Revit 3')
             await flowDynamic(flujoRevit)
         },
         4: async(flujoCabri)=>{
-            console.log('opcion Cabri 4')
             await flowDynamic(flujoCabri)
         },
         5: async(flujoAutocad)=>{
-            console.log('opcion Autocad 5')
             await flowDynamic(flujoAutocad)
         },
         6: async(flujoNavisworks)=>{
-            console.log('opcion Navisworks 6')
             await flowDynamic(flujoNavisworks)
         },
         7: async(flujoGeo5) => {
@@ -360,14 +311,12 @@ const flujoManuales =addKeyword('__si__', '__s__', '2')
             await flowDynamic(flujoRoc)
         },
         9: async() => {
-            console.log('opcion Volver Principal 7')
             await gotoFlow(flujoAuxiliar)
         }     
     
     }
 
     if (opcionesMenu[opcion]) {
-        console.log('opcion dentro manuales', opcion)
         opcionesMenu[opcion]()
     }else{
         await fallBack('Ops, no entiendo tu respuesta, por favor intenta de nuevo')
@@ -381,50 +330,36 @@ const flujoAuxiliar = addKeyword('__menu__')
 .addAnswer(['1. Reservar Auditorio Tecnológico o Sala de Conferencias.', '2. Manuales de Instalación.', '3. Sugerencias',  '4. Solicitar Concepto Técnico','5.Solicitud Mantenimiento','6.Solicitar grabaciones CCTV','7.Cancelar'],{capture:true}, async(ctx,{flowDynamic,gotoFlow,fallBack, endFlow})=>{
 
     let opcion = ctx.body.trim()
-    console.log('opcion Auxiliar', opcion)
-
-    // let aux = '##'+ctx.body.trim()+'##'
-    // console.log('aux', aux)
 
     const opcionesMenu = {
         1: async(flujoReserva)=>{
-            console.log('opcion Reserva Auxiliar')
             await flowDynamic(flujoReserva)
         },
         2: async () => {
-            console.log('opcion Manuales Auxiliar')
             await gotoFlow(flujoManuales)
+        },   
+        3: async(flujoSugerencias)=>{
+            await flowDynamic(flujoSugerencias)
         },
-
-       
-            3: async(flujoSugerencias)=>{
-                console.log('opcion Sugerencias')
-                await flowDynamic(flujoSugerencias)
-            },
-            4:async(flujoConceptos)=>{
-                console.log('opcion Conceptos')
-                await flowDynamic(flujoConceptos)
-            }
-            ,
-            5:async(flujoMantenimiento)=>{
-                console.log('opción Mantenimiento')
-                await flowDynamic(flujoMantenimiento)
-            }
-            ,
-            6:async(flujoCamaras)=>{
-                console.log('opcion Camaras')
-                await flowDynamic(flujoCamaras)
-            }
-            ,
-            7: async() => {
-                console.log('opción Cancelar Auxiliar')
-                await endFlow({body:'Fue un gusto atenderte, hasta pronto'}) 
-            }     
+        4:async(flujoConceptos)=>{
+            await flowDynamic(flujoConceptos)
+        }
+        ,
+        5:async(flujoMantenimiento)=>{
+            await flowDynamic(flujoMantenimiento)
+        }
+        ,
+        6:async(flujoCamaras)=>{
+            await flowDynamic(flujoCamaras)
+        }
+        ,
+        7: async() => {
+            await endFlow({body:'Fue un gusto atenderte, hasta pronto'}) 
+        }     
 
     }
     
     if (opcionesMenu[opcion]) {
-        console.log('opcion dentro auxiliar', opcion)
         opcionesMenu[opcion]()
     }else{
         await fallBack('Ops, no entiendo tu respuesta, por favor intenta de nuevo')
@@ -439,47 +374,35 @@ flujoInicial = addKeyword('hola', 'hols','buenos dias','hi','hello','buenos día
 .addAnswer(['1. Reservar Auditorio Tecnológico o Sala de Conferencias.', '2. Manuales de Instalación.', '3. Sugerencias',  '4. Solicitar Concepto Técnico','5.Solicitud Mantenimiento','6.Solicitar grabaciones CCTV','7.Cancelar'],{capture:true}, async(ctx,{flowDynamic, gotoFlow,fallBack, endFlow})=>{
 
     let opcion = ctx.body.trim()
-    console.log('opcion Inicial', opcion)
-
-    // let aux = '##'+ctx.body.trim()+'##'
-    // console.log('aux', aux)
 
     const opcionesMenu = {
         1: async(flujoReserva)=>{
-            console.log('opcion Reserva Inicial')
             await flowDynamic(flujoReserva)
         },
         2: async()=>{
-            console.log('opcion Manuales Inicial')
             await gotoFlow(flujoManuales)
         },
         3: async(flujoSugerencias)=>{
-            console.log('opcion Sugerencias')
             await flowDynamic(flujoSugerencias)
         },
         4:async(flujoConceptos)=>{
-            console.log('opcion Conceptos')
             await flowDynamic(flujoConceptos)
         }
         ,
         5:async(flujoMantenimiento)=>{
-            console.log('opción Mantenimiento')
             await flowDynamic(flujoMantenimiento)
         }
         ,
         6:async(flujoCamaras)=>{
-            console.log('opcion Camaras')
             await flowDynamic(flujoCamaras)
         }
         ,
         7: async() => {
-            console.log('opción Cancelar Auxiliar')
             await endFlow({body:'Fue un gusto atenderte, hasta pronto'}) 
         }       
     }
 
     if (opcionesMenu[opcion]) {
-        console.log('opcion dentro inicial', opcion)
         opcionesMenu[opcion]()
     }else{
         await fallBack('Ops, no entiendo tu respuesta, por favor intenta de nuevo')
